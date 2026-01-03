@@ -71,6 +71,42 @@ body {
   max-width: 90%;
   margin: 0 auto;
 }
+
+/* hero section */
+
+.hero {
+  margin: 50px auto;
+  border-radius: 10px;
+  max-width: 90%;
+  min-height: 400px;
+  background: url(/images/Group\ 70.png), url(/images/Vectorrr.png);
+  background-position: right, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 20%, cover;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero h2 {
+  font-family: "Merriweather", serif;
+  font-size: clamp(2.5rem, 4vw, 5.3rem);
+  color: white;
+  margin-bottom: 16px;
+}
+.hero p {
+  max-width: 70%;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(1rem, 2vw, 1.8rem);
+  color: white;
+  margin-bottom: 30px;
+}
+.hero a {
+  text-decoration: none;
+  font-size: clamp(1rem, 3vw, 1.8rem);
+  color: white;
+  font-family: "Inter", sans-serif;
+}
 @media (min-width: 768px) {
   .banner {
     min-height: 400px;
