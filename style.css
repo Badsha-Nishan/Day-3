@@ -4,28 +4,29 @@
   box-sizing: border-box;
 }
 body {
+  font-family: "Inter", sans-serif;
   font-family: "Merriweather", serif;
-  /* max-width: 1600px; */
+  max-width: 1600px;
   font-size: 62.5%;
 }
 
+/* banner section */
+
 .banner {
-  position: relative;
-  width: 100%;
-  max-width: 700px;
+  width: 90%;
   min-height: 300px;
   margin: 20px auto;
   background-image: url(/images/Banner\ Image.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border: 1px solid black;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  font-family: "Merriweather", serif;
 }
 
 .banner h3 {
@@ -38,33 +39,40 @@ body {
   color: white;
   text-align: center;
 }
-@media (min-width: 1024px) {
-  .banner {
-    width: 100%;
-    max-width: 980px;
-    min-height: 500px;
-    margin: 50px auto;
-    background-image: url(/images/Banner\ Image.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 1px solid black;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
+/* discount section*/
 
-  .banner h3 {
-    font-size: clamp(1.5rem, 3vw, 3.2rem);
-    color: white;
-    text-align: center;
-  }
-  .banner h2 {
-    font-size: clamp(2.5rem, 4vw, 4.2rem);
-    color: white;
-    text-align: center;
+.discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+.discount h1 {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(5.5rem, 4vw, 8.8rem);
+  margin-top: 100px;
+  margin-bottom: 30px;
+  color: #ff0000;
+  font-weight: bold;
+}
+.discount p {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  margin-bottom: 16px;
+  color: #ff0000;
+}
+.discount h3 {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(2rem, 4vw, 4.8rem);
+  margin-bottom: 46px;
+}
+.discount img {
+  max-width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .banner {
+    min-height: 400px;
   }
 }
